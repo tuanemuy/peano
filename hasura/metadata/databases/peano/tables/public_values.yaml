@@ -1,0 +1,53 @@
+table:
+  name: values
+  schema: public
+object_relationships:
+  - name: boolean
+    using:
+      foreign_key_constraint_on:
+        column: value_id
+        table:
+          name: boolean_values
+          schema: public
+  - name: datetime
+    using:
+      foreign_key_constraint_on:
+        column: value_id
+        table:
+          name: datetime_values
+          schema: public
+  - name: float
+    using:
+      foreign_key_constraint_on:
+        column: value_id
+        table:
+          name: float_values
+          schema: public
+  - name: integer
+    using:
+      foreign_key_constraint_on:
+        column: value_id
+        table:
+          name: integer_values
+          schema: public
+  - name: media
+    using:
+      foreign_key_constraint_on:
+        column: value_id
+        table:
+          name: media_values
+          schema: public
+  - name: post
+    using:
+      foreign_key_constraint_on:
+        column: value_id
+        table:
+          name: post_values
+          schema: public
+  - name: text
+    using:
+      foreign_key_constraint_on:
+        column: value_id
+        table:
+          name: text_values
+          schema: public

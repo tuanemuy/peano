@@ -1,0 +1,3 @@
+table:
+  name: integer_values
+  schema: public

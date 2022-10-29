@@ -1,0 +1,28 @@
+table:
+  name: posts
+  schema: public
+object_relationships:
+  - name: author
+    using:
+      foreign_key_constraint_on: author_id
+  - name: category
+    using:
+      foreign_key_constraint_on: category_id
+  - name: post_type
+    using:
+      foreign_key_constraint_on: post_type_id
+array_relationships:
+  - name: posts_tags
+    using:
+      foreign_key_constraint_on:
+        column: post_id
+        table:
+          name: posts_tags
+          schema: public
+  - name: revisions
+    using:
+      foreign_key_constraint_on:
+        column: post_id
+        table:
+          name: revisions
+          schema: public

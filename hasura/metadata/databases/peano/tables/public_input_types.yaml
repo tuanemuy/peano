@@ -1,0 +1,3 @@
+table:
+  name: input_types
+  schema: public

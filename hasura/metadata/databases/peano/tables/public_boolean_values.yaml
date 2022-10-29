@@ -1,0 +1,3 @@
+table:
+  name: boolean_values
+  schema: public

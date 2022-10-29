@@ -1,0 +1,11 @@
+table:
+  name: post_types
+  schema: public
+array_relationships:
+  - name: fields
+    using:
+      foreign_key_constraint_on:
+        column: post_type_id
+        table:
+          name: fields
+          schema: public

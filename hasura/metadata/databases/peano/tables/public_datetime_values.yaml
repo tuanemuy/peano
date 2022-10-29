@@ -1,0 +1,3 @@
+table:
+  name: datetime_values
+  schema: public
